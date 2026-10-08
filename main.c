@@ -33,34 +33,62 @@
 // }
 
 
+// #include <stdio.h>
+// //#include <stdlib.h>
+
+// int sumTwo(int a, int b) 
+// {
+//     return (a+b);             
+// }
+
+
+// int square(int n)
+// {
+//     return (n*n);
+// }
+    
+
+// int get_max(int x, int y)
+// {
+//     if (x > y)
+//         return x;
+    
+//     return y;
+// }
+
+// int main(void) 
+// {
+//     printf("sumTwo result : %i\n", sumTwo(2,5));
+//     printf("square result : %i\n", square(10));
+//     printf("get_max result : %i\n", get_max(2,5));
+
+//     return 0;
+// }
+
 #include <stdio.h>
-//#include <stdlib.h>
+// void square(int a)
+// {
+//     a = a*a;
+// }
 
-int sumTwo(int a, int b) 
+// int main() 
+// {
+//     int a = 2;
+//     square(a);
+//     printf("a= %i\n", a);
+// }
+//결과값 a=2,, why?->Call By Value,, a의 복사본이 들어감
+
+int square(int a)
 {
-    return (a+b);             
-}
-
-
-int square(int n)
-{
-    return (n*n);
-}
-    
-
-int get_max(int x, int y)
-{
-    if (x > y)
-        return x;
-    
-    return y;
+    return (a*a);
 }
 
 int main(void) 
 {
-    printf("sumTwo result : %i\n", sumTwo(2,5));
-    printf("square result : %i\n", square(10));
-    printf("get_max result : %i\n", get_max(2,5));
-
-    return 0;
+    int a = 2;
+    a = square(a);
+    printf("a = %i\n", a);
 }
+//결과값 a=4
+
